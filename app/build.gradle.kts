@@ -34,7 +34,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 }
@@ -45,7 +45,11 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("com.mathUtil.myaarlibrary:myaarlibrary:1.0.1")
+    // add .aar
+    //using mavenLocal() aar .m2
+    //implementation("com.mathUtil.myaarlibrary:myaarlibrary:1.0.1")
+    //using mavenCentral()
+    implementation("com.github.gptshubham595:MultiModularLibrary:1.0.1")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
