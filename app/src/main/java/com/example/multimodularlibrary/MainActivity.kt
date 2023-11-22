@@ -2,7 +2,9 @@ package com.example.multimodularlibrary
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.multimodularlibrary.databinding.ActivityMainBinding
+import com.example.myjarlibrary.MathUtilJar
 import com.toaster.library.MathUtils
 import kotlin.random.Random
 
@@ -16,5 +18,8 @@ class MainActivity : AppCompatActivity() {
         val rand = Random
         binding.textView.text =
             MathUtils(applicationContext).add(rand.nextInt(1, 10), rand.nextInt(10, 100)).toString()
+
+        val fromLib = MathUtilJar().add(rand.nextInt(1, 10), rand.nextInt(10, 100)).toString()
+        binding.textView.text = "${binding.textView.text}\n$fromLib"
     }
 }
