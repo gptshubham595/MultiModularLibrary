@@ -3,7 +3,8 @@ package com.example.multimodularlibrary
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.multimodularlibrary.databinding.ActivityMainBinding
-//import com.toaster.library.MathUtils
+import com.toaster.library.MathUtils
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -12,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//        binding.textView.text = MathUtils(applicationContext).add(1,2).toString()
+        val rand = Random
+        binding.textView.text =
+            MathUtils(applicationContext).add(rand.nextInt(1, 10), rand.nextInt(10, 100)).toString()
     }
 }

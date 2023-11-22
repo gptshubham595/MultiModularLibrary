@@ -54,7 +54,7 @@ afterEvaluate {
                     // "com.mathUtil.myaarlibrary:myaarlibrary:1.0.0"
                     groupId = "com.mathUtil.myaarlibrary"
                     artifactId = "myaarlibrary"
-                    version = "1.0.1"
+                    version = "1.0.2"
                 }
             }
             repositories {
