@@ -6,6 +6,7 @@ import android.widget.Toast
 import com.example.multimodularlibrary.databinding.ActivityMainBinding
 import com.example.myjarlibrary.MathUtilJar
 import com.toaster.library.MathUtils
+//import com.toaster.library.MathUtils
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {

@@ -44,12 +44,12 @@ dependencies {
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     // add .aar
-    implementation(files("libs/myaarlibrary-1.0.2.aar"))
+//    implementation(files("libs/myaarlibrary-1.0.2.aar"))
     implementation(files("libs/myJARLibrary.jar"))
     //using mavenLocal() aar .m2
 //    implementation("com.mathUtil.myaarlibrary:myaarlibrary:1.0.1")
     //using mavenCentral()
-//    implementation("com.github.gptshubham595:MultiModularLibrary:1.0.2")
+    implementation("com.github.gptshubham595:MultiModularLibrary:1.0.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
