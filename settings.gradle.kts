@@ -19,3 +19,4 @@ rootProject.name = "MultiModularLibrary"
 include(":app")
 include(":myAARLibrary")
 include(":myJARLibrary")
+include(":myAARLocationSearchLibrary")
